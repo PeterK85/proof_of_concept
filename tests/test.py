@@ -10,6 +10,12 @@ class Tests(unittest.TestCase):
         self.assertEqual(astro.test_func(0), 85)
     def test_fail(self):
         self.assertEqual(astro.test_func(0), 0)
+    def test_x1(self):
+        self.assertEqual(2+3, 5)
+    def test_x2(self):
+        self.assertEqual(astro.test_func(0), 85)
+    def test_xfail(self):
+        self.assertEqual(astro.test_func(0), 0)
 
 
 if __name__ == "__main__":
